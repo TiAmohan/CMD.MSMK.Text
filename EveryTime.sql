@@ -127,17 +127,17 @@ create table Shopping
 )
 go
 
---派送表
-if exists(select * from sys.tables where name='Send')
-	drop table Send
+--会员表
+if exists(select * from sys.tables where name='VIPuser')
+drop table VIPuser
 go
-create table Send
+create table VIPuser
 (
-	Sendid int primary key identity(1,1),    --派送id
-	Listname varchar(50) not null,           --订单名称
-	Listmoney   money not null,              --订单金额
-	Listmessage varchar(50) not null,        --订单信息
-	Buyerid int  references Buyer (Buyerid)  --对应买家个人信息（买家id）（外键）
+Vipid int primary key identity(1,1),    --会员id
+Vipname varchar(50) not null,           --会员名称
+VIPList   int  check(VIPList=1 or VIPList=2 or VIPList=3) not null,--会员级别(1=白银会员，2=黄金会员，3=至尊会员)
+Viper varchar(50) not null,        --会员特权
+Buyerid int  references Buyer (Buyerid)  --对应买家个人信息（买家id）（外键）
 )
 go
 
