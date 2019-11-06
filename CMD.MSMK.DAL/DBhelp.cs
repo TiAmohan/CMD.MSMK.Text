@@ -15,7 +15,7 @@ namespace CMD.MSMK.DAL
         /// <summary>
         /// 连接字符串
         /// </summary>
-        public static string str = ConfigurationManager.ConnectionStrings["ceshiConnectionString"].ConnectionString;
+        public static string str = ConfigurationManager.ConnectionStrings["EveryTimeConnectionString"].ConnectionString;
         /// <summary>
         /// 查询首行首列
         /// </summary>
@@ -35,6 +35,7 @@ namespace CMD.MSMK.DAL
                     {
                         conn.Open();
                     }
+                    comm.CommandType = CommandType.StoredProcedure;
                     //添加执行命令
                     comm.Parameters.AddRange(sqlpar);
                     //返回查询结果(第一行第一列)
@@ -58,6 +59,7 @@ namespace CMD.MSMK.DAL
                 {
                     conn.Open();
                 }
+                comm.CommandType = CommandType.StoredProcedure;
                 comm.Parameters.AddRange(sqlpar);
                 return comm.ExecuteReader(CommandBehavior.CloseConnection);
             }
@@ -78,6 +80,7 @@ namespace CMD.MSMK.DAL
                     {
                         conn.Open();
                     }
+                    comm.CommandType = CommandType.StoredProcedure;
                     comm.Parameters.AddRange(sqlpar);
                     return comm.ExecuteNonQuery();
                 }

@@ -93,6 +93,8 @@
     <Content Include="css\style.violet.css" />
     <Content Include="css\style2.css" />
     <Content Include="css\style4.css" />
+    <Content Include="EveryTime.sql" />
+    <Content Include="EveryTimeprop.sql" />
     <Content Include="fonts\dark-dashboard.svg" />
     <Content Include="icons-reference\fonts\dark-dashboard.svg" />
     <Content Include="icons-reference\icons-reference.html" />

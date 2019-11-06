@@ -21,3 +21,8 @@ E:\实训\gitTest\CMD.MSMK.MODEL\obj\Debug\CMD.MSMK.MODEL.csprojAssemblyReferenc
 E:\实训\gitTest\CMD.MSMK.MODEL\obj\Debug\CMD.MSMK.MODEL.csproj.CoreCompileInputs.cache
 E:\实训\gitTest\CMD.MSMK.MODEL\obj\Debug\CMD.MSMK.MODEL.dll
 E:\实训\gitTest\CMD.MSMK.MODEL\obj\Debug\CMD.MSMK.MODEL.pdb
+E:\实训\项目\CMD.MSMK.Text\CMD.MSMK.MODEL\bin\Debug\CMD.MSMK.MODEL.dll
+E:\实训\项目\CMD.MSMK.Text\CMD.MSMK.MODEL\bin\Debug\CMD.MSMK.MODEL.pdb
+E:\实训\项目\CMD.MSMK.Text\CMD.MSMK.MODEL\obj\Debug\CMD.MSMK.MODEL.csproj.CoreCompileInputs.cache
+E:\实训\项目\CMD.MSMK.Text\CMD.MSMK.MODEL\obj\Debug\CMD.MSMK.MODEL.dll
+E:\实训\项目\CMD.MSMK.Text\CMD.MSMK.MODEL\obj\Debug\CMD.MSMK.MODEL.pdb

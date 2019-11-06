@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CMD.MSMK.BLL;
+using CMD.MSMK.MODEL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +18,16 @@ namespace CMD.MSMK.Admin
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            Object obj = BllUsers.Userslogin(username.Text, password.Text);
+            MODELUsers model = BllUsers.UsersloginID(Convert.ToInt32(obj));
+            if (model.Usergrade == 1)
+            {
+                Response.Redirect("~/user/home-page.aspx");
+            }
+            if (model.Usergrade == 2)
+            {
+                Response.Redirect("~/Admin/login.aspx");
+            }
 
         }
     }
