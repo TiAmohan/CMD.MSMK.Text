@@ -59,7 +59,7 @@ namespace CMD.MSMK.DAL
                 {
                     conn.Open();
                 }
-                comm.CommandType = CommandType.StoredProcedure;
+                //comm.CommandType = CommandType.StoredProcedure;
                 comm.Parameters.AddRange(sqlpar);
                 return comm.ExecuteReader(CommandBehavior.CloseConnection);
             }

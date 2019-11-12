@@ -43,3 +43,12 @@ E:\实训\项目\CMD.MSMK.Text\CMD.MSMK.DAL\obj\Debug\CMD.MSMK.DAL.csproj.CoreCo
 E:\实训\项目\CMD.MSMK.Text\CMD.MSMK.DAL\obj\Debug\CMD.MSMK.DAL.csproj.CopyComplete
 E:\实训\项目\CMD.MSMK.Text\CMD.MSMK.DAL\obj\Debug\CMD.MSMK.DAL.dll
 E:\实训\项目\CMD.MSMK.Text\CMD.MSMK.DAL\obj\Debug\CMD.MSMK.DAL.pdb
+C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.DAL\bin\Debug\CMD.MSMK.DAL.dll
+C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.DAL\bin\Debug\CMD.MSMK.DAL.pdb
+C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.DAL\bin\Debug\CMD.MSMK.MODEL.dll
+C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.DAL\bin\Debug\CMD.MSMK.MODEL.pdb
+C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.DAL\obj\Debug\CMD.MSMK.DAL.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.DAL\obj\Debug\CMD.MSMK.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.DAL\obj\Debug\CMD.MSMK.DAL.csproj.CopyComplete
+C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.DAL\obj\Debug\CMD.MSMK.DAL.dll
+C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.DAL\obj\Debug\CMD.MSMK.DAL.pdb

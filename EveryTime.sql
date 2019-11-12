@@ -189,3 +189,26 @@ go
 insert Users values('张三','123456',1,1300)
 insert Users values('李四','111111',2,200)
 select * from Users
+
+
+--添加卖家信息
+insert into Seller values('小卡',0)
+insert into Seller values('小琴',0)
+insert into Seller values('小尼',0)
+insert into Seller values('小D',0)
+insert into Seller values('小力',0)
+select * from Seller
+--添加卖家商品信息
+insert into SellerProduct values('卡西欧','简约奢华','2387','',1)
+insert into SellerProduct values('浪琴','简约奢华','12345','',2)
+insert into SellerProduct values('阿玛尼','简约奢华','2387','',3)
+insert into SellerProduct values('DW','简约奢华','2387','',4)
+insert into SellerProduct values('劳力士','简约奢华','2387','',5)
+insert into SellerProduct values('卡西欧','简约奢华','2387','',1)
+insert into SellerProduct values('浪琴','简约奢华','2387','',2)
+insert into SellerProduct values('阿玛尼','简约奢华','2387','',3)
+select * from SellerProduct
+select * from Seller,SellerProduct where Seller.Sellerid=SellerProduct.Sellerid
+
+
+

@@ -80,9 +80,9 @@
 	<body style="background-color:#343A3A ;">
 
 		<div id="div1">
-
+           
 			<%--<div class="top">
-				
+				<img src="../img/kxo/1.jpg" />
 				<iframe src="top.html" width="100%" height="50%" frameborder="0" scrolling="no" style="position: absolute; visibility: visible;  z-index: 200; width: 100%; height: 56px; top:0px;"></iframe>
 			</div>--%>
 			<div id="middle" style=" width: 80%;">
