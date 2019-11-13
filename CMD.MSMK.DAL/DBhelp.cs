@@ -49,6 +49,21 @@ namespace CMD.MSMK.DAL
         /// <param name="sql"></param>
         /// <param name="sqlpar"></param>
         /// <returns></returns>
+        public static SqlDataReader slelectProc(string sql, params SqlParameter[] sqlpar)
+        {
+            SqlConnection conn = new SqlConnection(str);
+
+            using (SqlCommand comm = new SqlCommand(sql, conn))
+            {
+                if (conn.State == ConnectionState.Closed)
+                {
+                    conn.Open();
+                }
+                comm.CommandType = CommandType.StoredProcedure;
+                comm.Parameters.AddRange(sqlpar);
+                return comm.ExecuteReader(CommandBehavior.CloseConnection);
+            }
+        }
         public static SqlDataReader slelect(string sql, params SqlParameter[] sqlpar)
         {
             SqlConnection conn = new SqlConnection(str);
@@ -59,7 +74,6 @@ namespace CMD.MSMK.DAL
                 {
                     conn.Open();
                 }
-                //comm.CommandType = CommandType.StoredProcedure;
                 comm.Parameters.AddRange(sqlpar);
                 return comm.ExecuteReader(CommandBehavior.CloseConnection);
             }

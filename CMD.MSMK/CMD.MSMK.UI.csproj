@@ -72,6 +72,7 @@
     <Content Include="Admin\login.aspx" />
     <Content Include="Admin\Relation.aspx" />
     <Content Include="Admin\Sellerour.aspx" />
+    <Content Include="Admin\Sellertwo.aspx" />
     <Content Include="css\animate.css" />
     <Content Include="css\boot.css" />
     <Content Include="css\bootstrap.css" />
@@ -1040,6 +1041,13 @@
     </Compile>
     <Compile Include="Admin\Sellerour.aspx.designer.cs">
       <DependentUpon>Sellerour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sellertwo.aspx.cs">
+      <DependentUpon>Sellertwo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sellertwo.aspx.designer.cs">
+      <DependentUpon>Sellertwo.aspx</DependentUpon>
     </Compile>
     <Compile Include="user\down.aspx.cs">
       <DependentUpon>down.aspx</DependentUpon>

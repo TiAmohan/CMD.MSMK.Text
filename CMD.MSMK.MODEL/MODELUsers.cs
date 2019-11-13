@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMD.MSMK.MODEL
+namespace CMD.MSMK.MODEL.MODEL
 {
-    /// <summary>
-    /// 用户表
-    /// </summary>
-    public class MODELUsers
+    public class ModelUsers
     {
         /// <summary>
         /// 用户ID
@@ -24,12 +21,17 @@ namespace CMD.MSMK.MODEL
         /// </summary>
         public string Userpassword { get; set; }
         /// <summary>
+        /// 用户余额
+        /// </summary>
+        public Double Userbalance { get; set; }
+        /// <summary>
         /// 用户等级
         /// </summary>
         public int Usergrade { get; set; }
         /// <summary>
-        /// 用户余额
+        /// 用户状态
         /// </summary>
-        public Double Userbalance { get; set; }
+        public int UsersState { get; set; }
+
     }
 }

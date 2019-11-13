@@ -212,3 +212,9 @@ select * from Seller,SellerProduct where Seller.Sellerid=SellerProduct.Sellerid
 
 
 
+
+
+
+
+
+

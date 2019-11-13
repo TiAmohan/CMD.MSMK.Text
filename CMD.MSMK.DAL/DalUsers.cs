@@ -38,7 +38,7 @@ namespace CMD.MSMK.DAL
                 {
                     new SqlParameter("@Userid",Userid),
                 };
-            SqlDataReader sdr = DBhelp.slelect("UsersloginID", sqlpar);
+            SqlDataReader sdr = DBhelp.slelectProc("UsersloginID", sqlpar);
             MODELUsers model = new MODELUsers();
             if (sdr.HasRows)
             {
