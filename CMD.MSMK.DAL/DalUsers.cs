@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using CMD.MSMK.MODEL;
+using CMD.MSMK.MODEL.MODEL;
 
 namespace CMD.MSMK.DAL
 {
@@ -32,23 +32,24 @@ namespace CMD.MSMK.DAL
         /// </summary>
         /// <param name="Userid"></param>
         /// <returns></returns>
-        public static MODELUsers UsersloginID(int Userid)
+        public static ModelUsers  UsersloginID(int Userid)
         {
             SqlParameter[] sqlpar = new SqlParameter[]
                 {
                     new SqlParameter("@Userid",Userid),
                 };
             SqlDataReader sdr = DBhelp.slelectProc("UsersloginID", sqlpar);
-            MODELUsers model = new MODELUsers();
+            ModelUsers model = new ModelUsers();
             if (sdr.HasRows)
             {
                 while (sdr.Read())
                 {
-                    model.Userid = Convert.ToInt16(sdr["Userid"]);
+                    model.Userid = Convert.ToInt32(sdr["Userid"]);
                     model.Userbalance = Convert.ToDouble(sdr["Userbalance"]);
-                    model.Usergrade = Convert.ToInt16(sdr["Usergrade"]);
+                    model.Usergrade = Convert.ToInt32(sdr["Usergrade"]);
                     model.Username = Convert.ToString(sdr["Username"]);
                     model.Userpassword = Convert.ToString(sdr["Userpassword"]);
+                    model.UsersState= Convert.ToInt32(sdr["UsersState"]);
                 }
             }
             return model;

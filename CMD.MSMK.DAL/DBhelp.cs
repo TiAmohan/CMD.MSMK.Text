@@ -44,7 +44,7 @@ namespace CMD.MSMK.DAL
             }
         }
         /// <summary>
-        /// 查询
+        /// 查询(存储过程)
         /// </summary>
         /// <param name="sql"></param>
         /// <param name="sqlpar"></param>
@@ -64,6 +64,12 @@ namespace CMD.MSMK.DAL
                 return comm.ExecuteReader(CommandBehavior.CloseConnection);
             }
         }
+        /// <summary>
+        /// 查询(语句)
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="sqlpar"></param>
+        /// <returns></returns>
         public static SqlDataReader slelect(string sql, params SqlParameter[] sqlpar)
         {
             SqlConnection conn = new SqlConnection(str);
@@ -79,12 +85,35 @@ namespace CMD.MSMK.DAL
             }
         }
         /// <summary>
-        /// 非查询
+        /// 非查询(语句)
         /// </summary>
         /// <param name="sql"></param>
         /// <param name="sqlpar"></param>
         /// <returns></returns>
         public static int Notquery(string sql, SqlParameter[] sqlpar)
+        {
+            using (SqlConnection conn = new SqlConnection(str))
+            {
+                using (SqlCommand comm = new SqlCommand(sql, conn))
+                {
+                    if (conn.State == ConnectionState.Closed)
+                    {
+                        conn.Open();
+                    }
+                    //comm.CommandType = CommandType.StoredProcedure;
+                    comm.Parameters.AddRange(sqlpar);
+                    return comm.ExecuteNonQuery();
+                }
+            }
+        }
+
+        /// <summary>
+        /// 非查询(存储过程)
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="sqlpar"></param>
+        /// <returns></returns>
+        public static int NotqueryProc(string sql, SqlParameter[] sqlpar)
         {
             using (SqlConnection conn = new SqlConnection(str))
             {

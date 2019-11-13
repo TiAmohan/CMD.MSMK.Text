@@ -1,5 +1,5 @@
 ﻿using CMD.MSMK.DAL;
-using CMD.MSMK.MODEL;
+using CMD.MSMK.MODEL.MODEL;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -26,7 +26,7 @@ namespace CMD.MSMK.BLL
         /// </summary>
         /// <param name="Userid"></param>
         /// <returns></returns>
-        public static MODELUsers UsersloginID(int Userid)
+        public static ModelUsers UsersloginID(int Userid)
         {
             return DalUsers.UsersloginID(Userid);
         }

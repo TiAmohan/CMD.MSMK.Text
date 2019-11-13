@@ -1,13 +1,13 @@
 use master
 go
 
-if exists(select * from sys.databases where name='MSMK')
-drop database MSMK
+if exists(select * from sys.databases where name='EveryTime')
+drop database EveryTime
 go
-create database MSMK
+create database EveryTime
 go
 
-use MSMK
+use EveryTime
 go
 
 
