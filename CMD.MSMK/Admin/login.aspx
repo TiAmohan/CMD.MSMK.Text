@@ -244,7 +244,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <%--创建一个iframe--%>
-                            <iframe name="frame" src="Sellerour.aspx" style="width: 100%; height: 800px;" />
+                            <iframe name="frame" src="Sellerour.aspx" style="width: 1600px; height: 800px;" />
                         </div>
                     </div>
                 </div>

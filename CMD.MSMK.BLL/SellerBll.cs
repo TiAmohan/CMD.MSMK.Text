@@ -13,7 +13,7 @@ namespace CMD.MSMK.BLL
         //查询全部
         public static List<SellerProductModel> select()
         {
-            return Seller.select();
+            return DalSproduct.select();
         }
         }
 }
