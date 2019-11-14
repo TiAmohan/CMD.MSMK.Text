@@ -64,7 +64,7 @@ create table List--订单表
    
 	Listid int primary key identity(1,1),--订单id
 	Sproductid int references Sproduct(Sproductid),--对应卖家商品表的商品id（外键）
-	Liststate int default(0) check(Liststate=0 or Liststate=1 or Liststate=2 or Liststate=3 or Liststate=4)not null,--(默认值为0，0=未发货，1是待发货，2是已发货，3是已完成，4是退换)订单状态
+	Liststate int default(1) check(Liststate=1 or Liststate=2 or Liststate=3 or Liststate=4),--(默认值为1，1=未发货，2是已发货，3是已完成，4是退换)订单状态
 	Userid int references Users (Userid)--对应用户表的用户id（外键）
 )
 go
