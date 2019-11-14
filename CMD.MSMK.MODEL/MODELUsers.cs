@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CMD.MSMK.MODEL.MODEL
 {
-    public class ModelUsers
+    public class ModelUsers:ModelGrade
     {
         /// <summary>
         /// 用户ID
@@ -31,7 +31,34 @@ namespace CMD.MSMK.MODEL.MODEL
         /// <summary>
         /// 用户状态
         /// </summary>
-        public int UsersState { get; set; }
+        private int _usersState;
+
+        public int usersState
+        {
+            get { return _usersState; }
+            set { _usersState = value; }
+        }
+
+        private string usersStateSting;
+        /// <summary>
+        /// 用户状态转换
+        /// </summary>
+        public string UsersStateSting
+        {
+            get {
+                if (_usersState == 0)
+                {
+                    return "正常";
+                }
+                if (_usersState == 1)
+                {
+                    return "冻结";
+                }
+                return "";
+            }
+            set { usersStateSting = value; }
+        }
+
 
     }
 }

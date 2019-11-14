@@ -37,7 +37,23 @@ namespace CMD.MSMK.DAL
                 {
                        new SqlParameter("@num",num)
                 };
-            object sdr = DBhelp.select("selectnumber", sqlpar);
+            object sdr = DBhelp.select("Listnumber", sqlpar);
+            return sdr;
+        }
+
+
+        /// <summary>
+        /// 根据级别进行查询营销额
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
+        public static object selectListsale(string num)
+        {
+            SqlParameter[] sqlpar = new SqlParameter[]
+                {
+                       new SqlParameter("@num",num)
+                };
+            object sdr = DBhelp.select("Listsale", sqlpar);
             return sdr;
         }
     }

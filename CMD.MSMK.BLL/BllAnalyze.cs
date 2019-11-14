@@ -28,5 +28,15 @@ namespace CMD.MSMK.BLL
         {
             return DalAnalyze.selectList(num);
         }
+
+        /// <summary>
+        /// 根据级别进行查询营销额
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
+        public static object selectListsale(string num)
+        {
+            return DalAnalyze.selectListsale(num);
+        }
     }
 }

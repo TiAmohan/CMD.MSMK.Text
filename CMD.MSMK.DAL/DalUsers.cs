@@ -49,7 +49,7 @@ namespace CMD.MSMK.DAL
                     model.Usergrade = Convert.ToInt32(sdr["Usergrade"]);
                     model.Username = Convert.ToString(sdr["Username"]);
                     model.Userpassword = Convert.ToString(sdr["Userpassword"]);
-                    model.UsersState= Convert.ToInt32(sdr["UsersState"]);
+                    model.UsersStateSting= Convert.ToString(sdr["UsersState"]);
                 }
             }
             return model;
