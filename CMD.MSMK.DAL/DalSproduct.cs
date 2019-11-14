@@ -13,7 +13,8 @@ namespace CMD.MSMK.DAL
 {
    public class DalSproduct
     {
-        public List<ModelSproduct> SproductList()
+        //查询整表
+        public static List<ModelSproduct> SproductList()
         {
             string sql = "select * from Sproduct ";
             SqlDataReader reader = DBhelp.slelect(sql);
@@ -28,8 +29,10 @@ namespace CMD.MSMK.DAL
                     model.Sproductname = reader["Sproductname"].ToString();
                     model.Sproductcontent = reader["Sproductcontent"].ToString();
                     model.Sproductprice = double.Parse(reader["Sproductprice"].ToString());
+                    sproducts.Add(model);
                 }
             }
+            return sproducts;
         }
         //查询全部
         //public  List<ModelSproduct> model()
@@ -64,20 +67,20 @@ namespace CMD.MSMK.DAL
         //}
 
         //添加
-        public static int insert(SellerProductModel model)
-        {
-            //定义添加sql
-            string sql = "insert into SellerProduct values(@Sproductname,@Sproductcontent,@Sproductprice,@Sproductimg,@Sellerid)";
-            //存储集合
-            SqlParameter[] parameters = new SqlParameter[]
-            {
-                new SqlParameter("@Sproductname",model.Sproductname),
-                new SqlParameter("@Sproductcontent",model.Sproductcontent),
-                new SqlParameter("@Sproductprice",model.Sproductprice),
-                new SqlParameter("@Sproductimg",model.Sproductimg),
-                new SqlParameter("@Sellerid",model.Sellerid)
-            };
-            return DBhelp.Notquery(sql,parameters);  
-        }
+      //  public static int insert(SellerProductModel model)
+        //{
+        //    //定义添加sql
+        //    string sql = "insert into SellerProduct values(@Sproductname,@Sproductcontent,@Sproductprice,@Sproductimg,@Sellerid)";
+        //    //存储集合
+        //    SqlParameter[] parameters = new SqlParameter[]
+        //    {
+        //        new SqlParameter("@Sproductname",model.Sproductname),
+        //        new SqlParameter("@Sproductcontent",model.Sproductcontent),
+        //        new SqlParameter("@Sproductprice",model.Sproductprice),
+        //        new SqlParameter("@Sproductimg",model.Sproductimg),
+        //        new SqlParameter("@Sellerid",model.Sellerid)
+        //    };
+        //    return DBhelp.Notquery(sql,parameters);  
+        //}
     }
 }

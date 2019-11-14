@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Pluponform\Analyze.aspx" />
     <Content Include="user\Help.aspx" />
     <Content Include="user\index.aspx" />
     <Content Include="Admin\login.aspx" />
@@ -1000,6 +1001,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Pluponform\Analyze.aspx.cs">
+      <DependentUpon>Analyze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pluponform\Analyze.aspx.designer.cs">
+      <DependentUpon>Analyze.aspx</DependentUpon>
+    </Compile>
     <Compile Include="user\Help.aspx.cs">
       <DependentUpon>Help.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

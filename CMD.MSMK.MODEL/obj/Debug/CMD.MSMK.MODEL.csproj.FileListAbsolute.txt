@@ -31,4 +31,3 @@ C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.MODEL\bin\Debug\CMD.MSMK.M
 C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.MODEL\obj\Debug\CMD.MSMK.MODEL.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.MODEL\obj\Debug\CMD.MSMK.MODEL.dll
 C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.MODEL\obj\Debug\CMD.MSMK.MODEL.pdb
-C:\Users\Administrator\Desktop\CMD.MSMK.Text\CMD.MSMK.MODEL\obj\Debug\CMD.MSMK.MODEL.csprojAssemblyReference.cache

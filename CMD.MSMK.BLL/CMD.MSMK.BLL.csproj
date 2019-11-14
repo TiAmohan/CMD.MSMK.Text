@@ -41,11 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BllAnalyze.cs" />
     <Compile Include="BllUsers.cs" />
-    <Compile Include="loginBll.cs" />
-    <Compile Include="MODELUsers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SellerBll.cs" />
+    <Compile Include="BllSproducts.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CMD.MSMK.DAL\CMD.MSMK.DAL.csproj">
