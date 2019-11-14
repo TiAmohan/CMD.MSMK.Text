@@ -67,11 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\Help.aspx" />
-    <Content Include="Admin\index.aspx" />
+    <Content Include="user\Help.aspx" />
+    <Content Include="user\index.aspx" />
     <Content Include="Admin\login.aspx" />
-    <Content Include="Admin\Relation.aspx" />
-    <Content Include="Admin\Sellerour.aspx" />
+    <Content Include="user\Relation.aspx" />
+    <Content Include="Admin\Sproduct.aspx" />
     <Content Include="Admin\Sellertwo.aspx" />
     <Content Include="css\animate.css" />
     <Content Include="css\boot.css" />
@@ -1000,18 +1000,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Help.aspx.cs">
+    <Compile Include="user\Help.aspx.cs">
       <DependentUpon>Help.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Help.aspx.designer.cs">
+    <Compile Include="user\Help.aspx.designer.cs">
       <DependentUpon>Help.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\index.aspx.cs">
+    <Compile Include="user\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\index.aspx.designer.cs">
+    <Compile Include="user\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\login.aspx.cs">
@@ -1028,19 +1028,19 @@
     <Compile Include="Admin\login2.aspx.designer.cs">
       <DependentUpon>login2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Relation.aspx.cs">
+    <Compile Include="user\Relation.aspx.cs">
       <DependentUpon>Relation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Relation.aspx.designer.cs">
+    <Compile Include="user\Relation.aspx.designer.cs">
       <DependentUpon>Relation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Sellerour.aspx.cs">
-      <DependentUpon>Sellerour.aspx</DependentUpon>
+    <Compile Include="Admin\Sproduct.aspx.cs">
+      <DependentUpon>Sproduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Sellerour.aspx.designer.cs">
-      <DependentUpon>Sellerour.aspx</DependentUpon>
+    <Compile Include="Admin\Sproduct.aspx.designer.cs">
+      <DependentUpon>Sproduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Sellertwo.aspx.cs">
       <DependentUpon>Sellertwo.aspx</DependentUpon>
