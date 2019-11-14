@@ -28,8 +28,8 @@
        <center> <h2>卖家商品信息管理</h2>
             商品名称：<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                商品简介：<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-               <asp:Button ID="Button1" runat="server" Text="查询" />
-               <asp:Button ID="Button2" runat="server" Text="添加"/>
+               <asp:Button ID="Button1" runat="server" Text="查询" OnClick="Button1_Click" />
+               <asp:Button ID="Button2" runat="server" Text="添加" PostBackUrl="~/Admin/Sproduct_ins.aspx"/>
        </center>
         <div>
             <asp:Repeater ID="Repeater1" runat="server"  OnItemCommand="Repeater1_ItemCommand">
@@ -38,23 +38,21 @@
                <table id="aa"class="layui-table">
                    <thead>
                    <tr>
+                       <th>商品ID</th>
                        <th>商品图片</th>                     
                        <th>商品名称</th>
                        <th>商品简介</th>
                        <th>商品价格</th>
-                       <th>卖家名字</th>
-                       <th>卖家状态</th>
                        <th>操作</th>
                    </tr></thead>
            </HeaderTemplate>
                 <ItemTemplate>
                     <tr>
-                        <td><%#Eval("Sproductimg") %></td>
+                        <td><%#Eval("Sproductid") %></td>
+                        <td><img src="<%#Eval("Sproductimg") %>"/></td>
                         <td><%#Eval("Sproductname") %></td>
                         <td><%#Eval("Sproductcontent") %></td>
                         <td><%#Eval("Sproductprice") %></td>
-                        <td><%#Eval("Sellername") %></td>
-                        <td><%#Eval("Sellerstate") %></td>
                         <td>
                             <asp:LinkButton ID="LinkButton1" runat="server">修改</asp:LinkButton>
                             <asp:LinkButton ID="LinkButton2" runat="server">删除</asp:LinkButton>
