@@ -43,13 +43,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DalAnalyze.cs" />
+<<<<<<< HEAD
     <Compile Include="DalComment.cs" />
     <Compile Include="DalProviderProduct.cs" />
+=======
+    <Compile Include="DalNotice.cs" />
+>>>>>>> 541bdfae79d360584dbcf8d0283aec40e11951e4
     <Compile Include="DalUsers.cs" />
     <Compile Include="DalUsersList.cs" />
     <Compile Include="DBhelp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DalSproduct.cs" />
+    <Compile Include="DalSupplier.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CMD.MSMK.MODEL\CMD.MSMK.MODEL.csproj">

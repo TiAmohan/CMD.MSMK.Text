@@ -69,14 +69,26 @@
   <ItemGroup>
     <Content Include="Admin\Comment.aspx" />
     <Content Include="Admin\Pluponform\Analyze.aspx" />
+<<<<<<< HEAD
     <Content Include="Admin\Pluponform\UsersList.aspx" />
     <Content Include="Admin\ProviderProduct.aspx" />
+=======
+    <Content Include="Admin\Pluponform\Notice.aspx" />
+    <Content Include="Admin\Pluponform\Supplier.aspx" />
+    <Content Include="Admin\Pluponform\UsersList.aspx" />
+    <Content Include="Admin\Sproduct_ins.aspx" />
+    <Content Include="css\Pluponform\Analyze.css" />
+    <Content Include="js\Pluponform\Analyze.js" />
+>>>>>>> 541bdfae79d360584dbcf8d0283aec40e11951e4
     <Content Include="user\Help.aspx" />
     <Content Include="user\index.aspx" />
     <Content Include="Admin\login.aspx" />
     <Content Include="user\Relation.aspx" />
     <Content Include="Admin\Sproduct.aspx" />
+<<<<<<< HEAD
     <Content Include="Admin\Sproduct_ins.aspx" />
+=======
+>>>>>>> 541bdfae79d360584dbcf8d0283aec40e11951e4
     <Content Include="css\animate.css" />
     <Content Include="css\boot.css" />
     <Content Include="css\bootstrap.css" />
@@ -1018,6 +1030,23 @@
     <Compile Include="Admin\Pluponform\Analyze.aspx.designer.cs">
       <DependentUpon>Analyze.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="Admin\Pluponform\Notice.aspx.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pluponform\Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pluponform\Supplier.aspx.cs">
+      <DependentUpon>Supplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pluponform\Supplier.aspx.designer.cs">
+      <DependentUpon>Supplier.aspx</DependentUpon>
+    </Compile>
+>>>>>>> 541bdfae79d360584dbcf8d0283aec40e11951e4
     <Compile Include="Admin\Pluponform\UsersList.aspx.cs">
       <DependentUpon>UsersList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1025,12 +1054,21 @@
     <Compile Include="Admin\Pluponform\UsersList.aspx.designer.cs">
       <DependentUpon>UsersList.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Admin\ProviderProduct.aspx.cs">
       <DependentUpon>ProviderProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\ProviderProduct.aspx.designer.cs">
       <DependentUpon>ProviderProduct.aspx</DependentUpon>
+=======
+    <Compile Include="Admin\Sproduct_ins.aspx.cs">
+      <DependentUpon>Sproduct_ins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sproduct_ins.aspx.designer.cs">
+      <DependentUpon>Sproduct_ins.aspx</DependentUpon>
+>>>>>>> 541bdfae79d360584dbcf8d0283aec40e11951e4
     </Compile>
     <Compile Include="user\Help.aspx.cs">
       <DependentUpon>Help.aspx</DependentUpon>
@@ -1074,6 +1112,7 @@
     <Compile Include="Admin\Sproduct.aspx.designer.cs">
       <DependentUpon>Sproduct.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Admin\Sproduct_ins.aspx.cs">
       <DependentUpon>Sproduct_ins.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1081,6 +1120,8 @@
     <Compile Include="Admin\Sproduct_ins.aspx.designer.cs">
       <DependentUpon>Sproduct_ins.aspx</DependentUpon>
     </Compile>
+=======
+>>>>>>> 541bdfae79d360584dbcf8d0283aec40e11951e4
     <Compile Include="user\down.aspx.cs">
       <DependentUpon>down.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

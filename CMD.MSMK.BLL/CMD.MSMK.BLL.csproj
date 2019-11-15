@@ -42,8 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BllAnalyze.cs" />
+<<<<<<< HEAD
     <Compile Include="BllComment.cs" />
     <Compile Include="BllProviderProduct.cs" />
+=======
+    <Compile Include="BllNotice.cs" />
+    <Compile Include="BllSupplier.cs" />
+>>>>>>> 541bdfae79d360584dbcf8d0283aec40e11951e4
     <Compile Include="BllUsers.cs" />
     <Compile Include="BllUsersList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

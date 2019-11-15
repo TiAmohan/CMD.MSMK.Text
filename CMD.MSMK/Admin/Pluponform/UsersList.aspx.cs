@@ -1,4 +1,5 @@
 ﻿using CMD.MSMK.BLL;
+using CMD.MSMK.MODEL.MODEL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,6 +38,15 @@ namespace CMD.MSMK.Admin.Pluponform
         {
             Repeater1.DataSource = BllUsersList.UsersList(TextBox1.Text, Convert.ToInt32(DropDownList1.SelectedValue), Convert.ToInt32(RadioButtonList1.SelectedValue));
             Repeater1.DataBind();
+        }
+
+        protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            //ModelUsers model = new ModelUsers();
+            //model.usersState = Button2
+            //model.Userid = Convert.ToInt32(e.CommandArgument);
+            //BllUsersList.UsersStateupdate(model);
+            //Response.Redirect("UsersList.aspx");
         }
     }
 }
