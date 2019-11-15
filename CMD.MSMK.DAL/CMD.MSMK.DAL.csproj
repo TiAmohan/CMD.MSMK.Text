@@ -43,10 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DalAnalyze.cs" />
+    <Compile Include="DalNotice.cs" />
     <Compile Include="DalUsers.cs" />
+    <Compile Include="DalUsersList.cs" />
     <Compile Include="DBhelp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DalSproduct.cs" />
+    <Compile Include="DalSupplier.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CMD.MSMK.MODEL\CMD.MSMK.MODEL.csproj">

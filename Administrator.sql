@@ -79,11 +79,21 @@ go
 --	exec gradeList
 
 --修改用户状态
-create proc UsersStateupdate(@UsersState int,@Userid int)
+create proc UsersStateupdate(@Userid int)
 as
-if @UsersState<>0
-	update Users set UsersState=@UsersState where Userid=@Userid
-else
-	update Users set UsersState=@UsersState where Userid=@Userid
+declare @UsersState varchar(max)
+set @UsersState='select UsersState from Users where Userid='+CONVERT(varchar,@Userid)
+exec (@UsersState)
+declare @num int
+set @num=CONVERT(varchar,@UsersState)
+if @num=0
+	update Users set UsersState=1 where Userid=@Userid
+
+if @num<>0
+	update Users set UsersState=0 where Userid=@Userid
 go
---	exec UsersStateupdate 0,1
+--	exec UsersStateupdate 3
+--select * from Users
+
+
+--查询公告  可根据级别查询
