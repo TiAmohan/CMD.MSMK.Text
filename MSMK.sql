@@ -175,16 +175,16 @@ insert Receiving values('张三','河南省郑州市二七区XX路136号','12345678920',10)
 
 
 --卖家商品信息
-insert Sproduct values('卡西欧','简约奢华','5300','~/img/kxo/14.gif')
-insert Sproduct values('卡西欧','简约奢华','5200','~/img/kxo/13.gif')
-insert Sproduct values('卡西欧','简约奢华','5400','~/img/kxo/5.gif')
-insert Sproduct values('阿玛尼','简约奢华','5800','~/img/amn/6.gif')
-insert Sproduct values('阿玛尼','简约奢华','5800','~/img/amn/7.gif')
-insert Sproduct values('阿玛尼','简约奢华','5800','~/img/amn/1.gif')
-insert Sproduct values('浪琴','简约奢华','3300','~/img/lq/4.gif')
-insert Sproduct values('浪琴','简约奢华','3900','~/img/lq/5.gif')
-insert Sproduct values('劳力士','简约奢华','15300','~/img/lls/5.gif')
-insert Sproduct values('劳力士','简约奢华','35300','~/img/lls/6.gif')
+insert Sproduct values('卡西欧','简约奢华','5300','../img/kxo/14.gif')
+insert Sproduct values('卡西欧','简约奢华','5200','../img/kxo/13.gif')
+insert Sproduct values('卡西欧','简约奢华','5400','../img/kxo/5.gif')
+insert Sproduct values('阿玛尼','简约奢华','5800','../img/amn/6.gif')
+insert Sproduct values('阿玛尼','简约奢华','5800','../img/amn/7.gif')
+insert Sproduct values('阿玛尼','简约奢华','5800','../img/amn/1.gif')
+insert Sproduct values('浪琴','简约奢华','3300','../img/lq/4.gif')
+insert Sproduct values('浪琴','简约奢华','3900','../img/lq/5.gif')
+insert Sproduct values('劳力士','简约奢华','15300','../img/lls/5.gif')
+insert Sproduct values('劳力士','简约奢华','35300','../img/lls/6.gif')
 --select * from Sproduct
 
 --订单信息
